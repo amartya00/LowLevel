@@ -1,1 +1,3 @@
 Readings ar fairly stable at around 100*900000 for FP operations
+gcc -o build/pipeline src/pipeline.c -std=c99 -lrt -Wall -D  OFFSET=40
+objdump -S pipeline.o > pipelineAsm
